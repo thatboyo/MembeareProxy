@@ -1,13 +1,11 @@
-# ByeBlocker
+# MembeareUnblocker
 
 The only TRULY UNBLOCKABLE proxy that works on Netlify, codepen, playcode, as a bookmarklet, never shows up in your history, and MORE! (The ONLY unblocker that works on static hosts)
 
-Name inspired by Zek-c
+credit to tacoguy
 
-This can run as a bookmarklet.
-
-My discord: 
-https://discord.gg/BMxe6D9CKv
+join reloverse for support
+dicord.gg/reloverse
 
 ## How to use without bookmarklets
 
